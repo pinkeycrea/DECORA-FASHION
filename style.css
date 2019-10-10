@@ -119,7 +119,7 @@ nav a:hover {
 }
 
 #content1 img {
-	transform: rotate(-10deg);
+
 }
 
 #main {
@@ -127,9 +127,9 @@ nav a:hover {
 }
 
 #content2 {
-	padding-left: 360px;
+/*	padding-left: 360px;*/
 	padding-top: 100px;
-	width: 1400px;
+	width: 1200px;
 }
 
 h3 {
@@ -152,7 +152,7 @@ h3 {
 
 #content3 img {
 	float: right;
-	transform: rotate(10deg);
+	
 	width: 300px;
 	margin-right: 300px;
 }
@@ -162,7 +162,7 @@ h3 {
 	font-style: normal;
 	font-weight: 900;
 	color: #fff;
-	margin-left: 600px;
+	margin-left: 180px;
 	margin-top: 150px;
 	font-size: 20px;
 }
@@ -173,7 +173,7 @@ h3 {
 
 #content4 img {
 	float: left;
-	transform: rotate(-10deg);
+	
 	width: 300px;
 	margin-left: 200px;
 }
@@ -181,7 +181,7 @@ h3 {
 
 #content5 img {
 	float: right;
-	transform: rotate(10deg);
+	
 	width: 300px;
 	margin-right: 200px;
 	margin-top: 80px;
@@ -196,14 +196,14 @@ h3 {
 	font-style: normal;
 	font-weight: 900;
 	color: #fff;
-	margin-left: 550px;
+	margin-left: 180px;
 	margin-top: 600px;
 	font-size: 20px;
 }
 
 #content6 img {
 	float: left;
-	transform: rotate(-10deg);
+
 	width: 280px;
 	margin-left: 200px;
 	margin-top: 5px;
@@ -214,8 +214,8 @@ h3 {
 }
 
 #content7 img {
-	padding-left: 400px;
-	transform: rotate(10deg);
+	padding-left: 180px;
+	
 }
 
 
@@ -231,7 +231,7 @@ h3 {
 
 #content8 img {
 	float: right;
-	transform: rotate(-10deg);
+
 	width: 400px;
 	margin-right: 180px;
 }
@@ -251,7 +251,7 @@ h3 {
 	font-weight: 900;
 	color: #fff;
 	top: 200px;
-	left: 700px;
+	
 	font-size: 70px;
 	line-height: 80px;
 	position: relative;
@@ -259,7 +259,7 @@ h3 {
 
 #content9 img {
 	float: left;
-	transform: rotate(8deg);
+	
 	width: 350px;
 	margin-left: 180px;
 	margin-top: 60px;
@@ -272,7 +272,7 @@ h3 {
 	color: #fff;
 	top: 100px;
 	margin-top: 250px;
-	margin-left: 700px;
+	margin-left: 180px;
 	font-size: 20px;
 }
 
@@ -288,7 +288,7 @@ h3 {
 
 #content10 img {
 	float: right;
-	transform: rotate(-10deg);
+	
 	width: 400px;
 	margin-right: 180px;
 	position: relative;
@@ -306,7 +306,7 @@ h3 {
 
 #content11 img {
 
-	transform: rotate(-10deg);
+	
 	width: 910px;
 }
 
@@ -324,7 +324,7 @@ h3 {
 
 #content12 img {
 	float: left;
-	transform: rotate(-8deg);
+
 	width: 400px;
 	margin-left: 180px;
 	margin-top: 60px;
@@ -337,7 +337,7 @@ h3 {
 	color: #fff;
 	top: 100px;
 	margin-top: 50px;
-margin-left:730px;
+margin-left:180px;
 	font-size: 20px;
 
 }
@@ -354,10 +354,10 @@ margin-left:730px;
 
 #content13 img {
 	float: right;
-	transform: rotate(10deg);
-	width: 400px;
+	
+	width: 350px;
 	margin-right: 180px;
-	margin-top: 80px;
+	
 }
 
 #content13 p {
