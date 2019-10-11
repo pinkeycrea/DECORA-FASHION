@@ -6,7 +6,7 @@
 
 body {
 
-font-family: vdl-megag, sans-serif;
+	font-family: vdl-megag, sans-serif;
 	font-style: normal;
 	font-weight: 900;
 }
@@ -66,16 +66,23 @@ h2 {
 	/*文字の装飾は省略*/
 }
 
-
-#header {
-	width: 100%;
-	height: 1000px;
-	overflow: hidden;
-	background-image: url("img/noma.jpg");
-	opacity: 0.8;
+.example img {
+	opacity: 0.7;
 }
 
 
+#header {
+	width: 100%;
+	overflow: hidden;
+	opacity: 0.8;
+	position: sticky;
+	/*固定する*/
+	position: -webkit-sticky;
+	/*Safari用ベンダープレフィックス*/
+	top: 0;
+	/*ブラウザの上からの距離はゼロ*/
+
+}
 
 nav {
 	overflow: hidden;
@@ -113,13 +120,10 @@ nav a:hover {
 	border-bottom: 3px solid #fff;
 }
 
-#content1 {
-	padding-top: 100px;
-
-}
-
 #content1 img {
-
+	transform: rotate(10deg);
+	margin-top: 100px;
+	/* キーワードで指定する場合*/
 }
 
 #main {
@@ -127,9 +131,15 @@ nav a:hover {
 }
 
 #content2 {
-/*	padding-left: 360px;*/
+	/*	padding-left: 360px;*/
 	padding-top: 100px;
 	width: 1200px;
+}
+
+#content2 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h3 {
@@ -152,9 +162,9 @@ h3 {
 
 #content3 img {
 	float: right;
-	
 	width: 300px;
 	margin-right: 300px;
+	transform: rotate(-10deg);
 }
 
 #content4 p {
@@ -162,7 +172,7 @@ h3 {
 	font-style: normal;
 	font-weight: 900;
 	color: #fff;
-	margin-left: 180px;
+	margin-left: 600px;
 	margin-top: 150px;
 	font-size: 20px;
 }
@@ -173,7 +183,7 @@ h3 {
 
 #content4 img {
 	float: left;
-	
+	transform: rotate(10deg);
 	width: 300px;
 	margin-left: 200px;
 }
@@ -181,7 +191,7 @@ h3 {
 
 #content5 img {
 	float: right;
-	
+	transform: rotate(-10deg);
 	width: 300px;
 	margin-right: 200px;
 	margin-top: 80px;
@@ -196,14 +206,14 @@ h3 {
 	font-style: normal;
 	font-weight: 900;
 	color: #fff;
-	margin-left: 180px;
+	margin-left: 600px;
 	margin-top: 600px;
 	font-size: 20px;
 }
 
 #content6 img {
 	float: left;
-
+	transform: rotate(-10deg);
 	width: 280px;
 	margin-left: 200px;
 	margin-top: 5px;
@@ -215,9 +225,8 @@ h3 {
 
 #content7 img {
 	padding-left: 180px;
-	
+	transform: rotate(10deg);
 }
-
 
 #content8 h4 {
 	font-family: vdl-megag, sans-serif;
@@ -231,7 +240,7 @@ h3 {
 
 #content8 img {
 	float: right;
-
+	transform: rotate(10deg);
 	width: 400px;
 	margin-right: 180px;
 }
@@ -251,7 +260,7 @@ h3 {
 	font-weight: 900;
 	color: #fff;
 	top: 200px;
-	
+	margin-left: 650px;
 	font-size: 70px;
 	line-height: 80px;
 	position: relative;
@@ -259,7 +268,7 @@ h3 {
 
 #content9 img {
 	float: left;
-	
+	transform: rotate(-10deg);
 	width: 350px;
 	margin-left: 180px;
 	margin-top: 60px;
@@ -272,7 +281,7 @@ h3 {
 	color: #fff;
 	top: 100px;
 	margin-top: 250px;
-	margin-left: 180px;
+	margin-left: 650px;
 	font-size: 20px;
 }
 
@@ -288,7 +297,8 @@ h3 {
 
 #content10 img {
 	float: right;
-	
+	transform: rotate(10deg);
+	margin-top: 100px;
 	width: 400px;
 	margin-right: 180px;
 	position: relative;
@@ -305,18 +315,18 @@ h3 {
 }
 
 #content11 img {
+	transform: rotate(-10deg);
 
-	
 	width: 910px;
 }
 
-#content12 h7 {
+#content12 h5 {
 	font-family: vdl-megag, sans-serif;
 	font-style: normal;
 	font-weight: 900;
 	color: #fff;
 	top: 30px;
-	left: 140px;
+	margin-left: 650px;
 	font-size: 70px;
 	line-height: 80px;
 	position: relative;
@@ -324,10 +334,10 @@ h3 {
 
 #content12 img {
 	float: left;
-
+	transform: rotate(-10deg);
 	width: 400px;
 	margin-left: 180px;
-	margin-top: 60px;
+
 }
 
 #content12 p {
@@ -337,9 +347,8 @@ h3 {
 	color: #fff;
 	top: 100px;
 	margin-top: 50px;
-margin-left:180px;
+	margin-left: 650px;
 	font-size: 20px;
-
 }
 
 #content13 h6 {
@@ -347,17 +356,17 @@ margin-left:180px;
 	font-style: normal;
 	font-weight: 600;
 	color: #fff;
-	margin-left:180px;
+	margin-left: 180px;
 	font-size: 70px;
 	margin-top: 200px;
 }
 
 #content13 img {
 	float: right;
-	
+	transform: rotate(10deg);
 	width: 350px;
 	margin-right: 180px;
-	
+
 }
 
 #content13 p {
@@ -367,4 +376,236 @@ margin-left:180px;
 	color: #fff;
 	margin-left: 180px;
 	font-size: 20px;
+}
+
+#content14 h6 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: #fff;
+	top: 80px;
+	margin-left: 650px;
+	font-size: 70px;
+	line-height: 80px;
+	position: relative;
+}
+
+#content14 img {
+	float: left;
+	transform: rotate(-10deg);
+	width: 400px;
+	margin-left: 180px;
+	margin-top: 100px;
+}
+
+#content14 p {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: #fff;
+	margin-top: 100px;
+	margin-left: 650px;
+	font-size: 20px;
+}
+
+#content15 img {
+	padding-left: 230px;
+	padding-top: 80px;
+	transform: rotate(10deg);
+}
+
+#content15 {
+	background-image: url(img/hair.png);
+	background-size: 900px;
+	margin-top: 300px;
+}
+
+#content16 h6 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #fff;
+	margin-left: 180px;
+	font-size: 70px;
+	margin-top: 200px;
+}
+
+#content16 img {
+	float: right;
+	transform: rotate(10deg);
+	width: 350px;
+	margin-right: 180px;
+
+}
+
+#content16 p {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	color: #fff;
+	margin-left: 180px;
+	font-size: 20px;
+}
+
+#content17 h6 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: #fff;
+	top: 80px;
+	margin-left: 650px;
+	font-size: 70px;
+	line-height: 80px;
+	position: relative;
+}
+
+#content17 img {
+	float: left;
+	transform: rotate(-10deg);
+	width: 360px;
+	margin-left: 180px;
+	margin-top: 160px;
+}
+
+#content17 p {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: #fff;
+	margin-top: 160px;
+	margin-left: 650px;
+	font-size: 20px;
+}
+
+#content18 h5 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #fff;
+	margin-left: 180px;
+	font-size: 70px;
+	margin-top: 300px;
+}
+
+#content18 img {
+	float: right;
+	transform: rotate(10deg);
+	width: 350px;
+	margin-right: 180px;
+	margin-top: 100px;
+}
+
+#content18 p {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	color: #fff;
+	margin-left: 180px;
+	font-size: 20px;
+}
+
+#content19 img {
+	padding-top: 80px;
+	transform: rotate(-10deg);
+}
+
+#content20 h6 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #fff;
+	margin-left: 600px;
+	font-size: 70px;
+}
+
+#content20 p {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	color: #fff;
+	margin-left: 600px;
+	font-size: 20px;
+}
+
+#content20 img {
+	float: left;
+	width: 370px;
+	margin-left: 200px;
+}
+
+#content21 {
+	margin-left: 300px;
+	margin-top: 260px;
+}
+
+#content21 h5 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #fff;
+	font-size: 40px;
+}
+
+#content22 {
+	margin-left: 300px;
+	margin-top: 100px;
+}
+
+#content22 h5 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #fff;
+	font-size: 40px;
+}
+
+#content23 img {
+	padding-left: 242px;
+	padding-top: 70px;
+	transform: rotate(10deg);
+}
+
+
+#content24 h5 {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: #fff;
+	top: 30px;
+	margin-left: 650px;
+	font-size: 70px;
+	line-height: 80px;
+	position: relative;
+}
+
+#content24 img {
+	float: left;
+	transform: rotate(-10deg);
+	width: 390px;
+	margin-left: 180px;
+	margin-top: 120px;
+}
+
+#content24 p {
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: #fff;
+	margin-top: 80px;
+	margin-left: 650px;
+	font-size: 20px;
+}
+
+#content25 img {
+	padding-left: 70px;
+	padding-top: 10px;
+}
+
+footer {
+	/*footerの装飾*/
+	width: 100%;
+	background-color: #8105d8;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
 }
