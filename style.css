@@ -12,6 +12,48 @@ body {
 }
 
 
+nav {
+	position: fixed;
+	overflow: hidden;
+	background-image: url("img/dorodoro.png");
+	padding-bottom: 190px;
+	padding-top: 10px;
+	padding-right: 10px;
+	z-index: 2;
+	
+}
+
+nav li {
+	list-style-type: none;
+	float: left;
+	margin-top: 2px;
+	z-index: 2;
+}
+
+nav a {
+	font-size: 30px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	margin: 14px 16px 0px 50px;
+	padding-top: 20px;
+	width: 180px;
+	height: 50px;
+	text-align: center;
+	line-height: 20px;
+	font-family: vdl-megag, sans-serif;
+	font-style: normal;
+	z-index: 2;
+
+
+}
+
+nav a:hover {
+	border-bottom: 3px solid #fff;
+	z-index: 2;
+}
+
+
 h1 {
 	text-align: center;
 	color: #8105d8;
@@ -39,12 +81,13 @@ h2 {
 	position: relative;
 	/*相対配置*/
 	height: 600px;
+	z-index: 1;
 
 }
 
 .example h1 {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
@@ -52,11 +95,12 @@ h2 {
 	margin: 0;
 	padding: 0;
 	/*文字の装飾は省略*/
+	z-index: 1;
 }
 
 .example h2 {
 	position: absolute;
-	top: 70%;
+	top: 80%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
@@ -64,10 +108,12 @@ h2 {
 	margin: 0;
 	padding: 0;
 	/*文字の装飾は省略*/
+	z-index: 1;
 }
 
 .example img {
 	opacity: 0.7;
+	z-index: 1;
 }
 
 
@@ -81,44 +127,8 @@ h2 {
 	/*Safari用ベンダープレフィックス*/
 	top: 0;
 	/*ブラウザの上からの距離はゼロ*/
+	z-index: 2;
 
-}
-
-nav {
-	position: fixed;
-	overflow: hidden;
-	background-image: url("img/dorodoro.png");
-	padding-bottom: 190px;
-	padding-top: 10px;
-	padding-right: 10px;
-	
-}
-
-nav li {
-	list-style-type: none;
-	float: left;
-	margin-top: 2px;
-}
-
-nav a {
-	font-size: 30px;
-	display: block;
-	text-decoration: none;
-	color: #fff;
-	margin: 14px 16px 0px 50px;
-	padding-top: 20px;
-	width: 180px;
-	height: 50px;
-	text-align: center;
-	line-height: 20px;
-	font-family: vdl-megag, sans-serif;
-	font-style: normal;
-
-
-}
-
-nav a:hover {
-	border-bottom: 3px solid #fff;
 }
 
 #content1 img {
