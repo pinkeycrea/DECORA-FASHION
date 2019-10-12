@@ -26,7 +26,6 @@ nav {
 nav li {
 	list-style-type: none;
 	float: left;
-	margin-top: 2px;
 	z-index: 2;
 }
 
@@ -35,7 +34,7 @@ nav a {
 	display: block;
 	text-decoration: none;
 	color: #fff;
-	margin: 14px 16px 0px 50px;
+	margin: 14px 13px 0px 50px;
 	padding-top: 20px;
 	width: 180px;
 	height: 50px;
@@ -54,7 +53,7 @@ nav a:hover {
 #header {
 	width: 100%;
 	overflow: hidden;
-	opacity: 0.8;
+
 
 	/*固定する*/
 	position: -webkit-sticky;
@@ -125,6 +124,9 @@ h2 {
 .example img {
 	opacity: 0.7;
 	z-index: 1;
+}
+#content1{
+	margin-top: 319px;
 }
 
 #content1 img {
@@ -199,7 +201,7 @@ h3 {
 #content5 img {
 	float: right;
 	transform: rotate(-10deg);
-	width: 300px;
+	width: 370px;
 	margin-right: 200px;
 	margin-top: 80px;
 }
@@ -615,4 +617,18 @@ footer {
 	color: #fff;
 	text-align: center;
 	padding: 30px 0;
+}
+
+.fadein {
+	opacity: 0;
+	transform: translate(0, 50px);
+	transition: all 0.8s;
+	display: block;
+	margin: 60px auto;
+	text-align: center;
+}
+
+.fadein.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
 }
