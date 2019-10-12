@@ -44,12 +44,23 @@ nav a {
 	font-family: vdl-megag, sans-serif;
 	font-style: normal;
 	z-index: 2;
-
-
 }
 
 nav a:hover {
 	border-bottom: 3px solid #fff;
+	z-index: 2;
+}
+
+#header {
+	width: 100%;
+	overflow: hidden;
+	opacity: 0.8;
+
+	/*固定する*/
+	position: -webkit-sticky;
+	/*Safari用ベンダープレフィックス*/
+	top: 0;
+	/*ブラウザの上からの距離はゼロ*/
 	z-index: 2;
 }
 
@@ -114,21 +125,6 @@ h2 {
 .example img {
 	opacity: 0.7;
 	z-index: 1;
-}
-
-
-#header {
-	width: 100%;
-	overflow: hidden;
-	opacity: 0.8;
-	position: sticky;
-	/*固定する*/
-	position: -webkit-sticky;
-	/*Safari用ベンダープレフィックス*/
-	top: 0;
-	/*ブラウザの上からの距離はゼロ*/
-	z-index: 2;
-
 }
 
 #content1 img {
