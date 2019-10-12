@@ -24,8 +24,8 @@ nav {
 	overflow: hidden;
 	background-image: url("img/dorodoro.png");
 	padding-bottom: 190px;
-	padding-top: 20px;
-	padding-right: 42px;
+	padding-top: 10px;
+	padding-right: 64px;
 	z-index: 2;
 
 }
@@ -834,14 +834,14 @@ footer {
 		/*親div*/
 		position: relative;
 		/*相対配置*/
-		height: 600px;
+		height: 900px;
 		z-index: 1;
 
 	}
 
 	.example h1 {
 		position: absolute;
-		top: 60%;
+		top: 40%;
 		margin-left: 400px;
 		-ms-transform: translate(-50%, -50%);
 		-webkit-transform: translate(-50%, -50%);
@@ -853,6 +853,7 @@ footer {
 
 	.example h2 {
 		position: absolute;
+		top:70%;
 			margin-left: 400px;
 		-ms-transform: translate(-50%, -50%);
 		-webkit-transform: translate(-50%, -50%);
@@ -868,20 +869,19 @@ footer {
 		width: 1200px;
 	}
 
-	#content1 {
-		margin-top: 358px;
-	}
+
 
 	#content1 img {
 		transform: rotate(10deg);
-		margin-top: 100px;
+		
+	
 		/* キーワードで指定する場合*/
 	}
 
 	#main {
 		background-image: url("img/haikei.jpg");
 width: 1200px;
-		padding-top: 10px;
+		padding-top: 1px;
 	
 	}
 
